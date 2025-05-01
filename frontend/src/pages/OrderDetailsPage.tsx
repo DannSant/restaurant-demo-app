@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { fetchOrderDetails, deleteOrderDetail, createOrderDetail } from "../store/slices/orderDetailsSlice";
 import { closeOrder, fetchOrders, updateOrder } from "../store/slices/ordersSlice";
-import { fetchProducts } from "../store/slices/productsSlice";
 import { Order } from "../models/Order";
 import { OrderDetail } from "../models/OrderDetail";
 import { Product } from "../models/Product";
