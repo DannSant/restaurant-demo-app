@@ -5,6 +5,7 @@ import OrdersPage from "../pages/OrdersPage";
 import ReportsPage from "../pages/ReportsPage";
 import PrivateRoute from "./PrivateRoute";
 import OverviewPage from "../pages/OverviewPage";
+import OrderDetailsPage from "../pages/OrderDetailsPage";
 
 export default function AppRouter() {
     return (
@@ -42,6 +43,7 @@ export default function AppRouter() {
             </PrivateRoute>
           }
         />
+         <Route path="/orders/:id" element={<PrivateRoute><OrderDetailsPage /></PrivateRoute>} /> {/*I added this */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     );

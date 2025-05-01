@@ -9,9 +9,9 @@ export default function Sidebar() {
   const navigate = useNavigate();
   
   const handleLogout = async () => {
-    await supabase.auth.signOut();            // 🔐 Clear Supabase session
-    dispatch(setUser(null));                  // 🧹 Clear Redux session
-    navigate("/login");                       // 🚪 Redirect to login
+    await supabase.auth.signOut();            
+    dispatch(setUser(null));                  
+    navigate("/login");                       
   };
 
   return (
