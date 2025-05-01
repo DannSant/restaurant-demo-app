@@ -4,7 +4,7 @@ import {
   createOrderDetail,
   updateOrderDetail,
   deleteOrderDetail,
-} from "../controllers/orderDetailscontroller";
+} from "../controllers/orderDetailsController";
 import { asyncHandler } from "../utils/asyncHandler";
 
 const router = Router();
