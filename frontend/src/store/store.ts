@@ -4,12 +4,15 @@ import productsReducer from "./slices/productsSlice";
 import businessDayReducer from "./slices/businessDaySlice";
 import ordersReducer from "./slices/ordersSlice";
 import orderDetailsReducer from "./slices/orderDetailsSlice";
+import sessionReducer from "./slices/sessionSlice";
+
 export const store = configureStore({
   reducer: {
-     products: productsReducer,
-     orders: ordersReducer,
-     orderDetails: orderDetailsReducer,
+    products: productsReducer,
+    orders: ordersReducer,
+    orderDetails: orderDetailsReducer,
     businessDay: businessDayReducer,
+    session: sessionReducer,
   },
 });
 
